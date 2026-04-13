@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "mysql-db";
+$username = "lokesh";
+$password = "lokesh@123";
 $db = "onlineshop";
 
 
