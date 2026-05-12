@@ -1,16 +1,16 @@
+cat > db.php <<'EOF'
 <?php
 
-$servername = "mysql-db";   // container name (IMPORTANT)
-$username = "lokesh";       // from your docker env
-$password = "lokesh@123";   // from your docker env
-$db = "onlineshop";
+$servername = getenv("DB_HOST") ?: "mysql-service";
+$username   = getenv("DB_USER") ?: "lokesh";
+$password   = getenv("DB_PASSWORD") ?: "lokesh@123";
+$dbname     = getenv("DB_NAME") ?: "onlineshop";
 
-// Create connection
-$con = mysqli_connect("mysql-db", "lokesh", "lokesh@123", "onlineshop");
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
-// Check connection
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
 ?>
+EOF

@@ -8,7 +8,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-define('DB_SERVER', 'mysql-db');
+define('DB_SERVER', 'mysql-service');
    define('DB_USERNAME', 'lokesh');
    define('DB_PASSWORD', 'lokesh@123');
    define('DB_DATABASE', 'onlineshop');

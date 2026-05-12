@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: online-shopping-config
+data:
+  DB_HOST: mysql-service
+  DB_NAME: onlineshop
+  DB_USER: lokesh

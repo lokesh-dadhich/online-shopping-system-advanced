@@ -1,3 +1,4 @@
+<?php include "db.php"; ?>
 
    <div class="main main-raised">
         <div class="container mainn-raised" style="width:100%;">

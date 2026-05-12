@@ -1,6 +1,6 @@
   <?php 
-include("../../db.php");
- 
+
+require_once __DIR__ . "/../db.php"; 
   ?>
 
   <div class="row" style="padding-top: 10vh;">

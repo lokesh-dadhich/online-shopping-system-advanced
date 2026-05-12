@@ -1,0 +1,11 @@
+k8s/
+.git/
+aws/
+*.zip
+*.tar
+*.tar.gz
+node_modules/
+vendor/
+README.md
+LICENSE
+screenshot/

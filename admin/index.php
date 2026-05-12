@@ -1,11 +1,11 @@
 
     <?php
 session_start();
-include("../../db.php");
+require_once __DIR__ . "/../db.php";
 
-include "sidenav.php";
-include "topheader.php";
-include "activitity.php";
+include __DIR__ . "/sidenav.php";
+include __DIR__ . "/topheader.php";
+include __DIR__ . "/activitity.php";
 
 ?>
       <!-- End Navbar -->

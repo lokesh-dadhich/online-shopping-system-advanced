@@ -3,7 +3,7 @@ ob_start(); // Prevent header errors
 session_start();
 
 // ================= DB CONNECTION =================
-$db = mysqli_connect("mysql-db", "lokesh", "lokesh@123", "onlineshop");
+$db = mysqli_connect("mysql-service", "lokesh", "lokesh@123", "onlineshop");
 
 if (!$db) {
     die("Database connection failed: " . mysqli_connect_error());
